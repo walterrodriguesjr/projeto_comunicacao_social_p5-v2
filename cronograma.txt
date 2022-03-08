@@ -1,0 +1,16 @@
+1 - instalação do laravel via composer, atualização do composer 
+    ->composer create-project --prefer-dist laravel/laravel:^7.0 p5-v2
+    ->composer update
+
+2-criação da rota (routes) no arquivo web.php 
+    ->Route::get('/', 'PrincipalController@principal')->name('sistema.index');
+
+3-criação do controller - PrincipalController em (app\)Http\Controllers)
+        ->php artisan make:controller PrincipalController
+    ->inserida a função 'principal', que como return, renderiza a view 'sistema.principal', já utilizando o seu apelido delarado em web.php
+
+4-criada a view 'principal', que será a index do projeto
+    ->principal.blade.php 
+
+5-instalação das dependencias do boostrap direto no laravel PENDENTE
+https://www.youtube.com/watch?v=LQQk1ZSyqLM
