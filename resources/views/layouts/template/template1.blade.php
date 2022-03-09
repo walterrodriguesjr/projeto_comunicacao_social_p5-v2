@@ -20,6 +20,8 @@
 
     @yield('conteudoCards')
 
+    @yield('conteudoFormCadastroEvento')
+
     @include('layouts.components.footer')
 
     <script src="{{ asset('site/jquery.js') }}"></script>

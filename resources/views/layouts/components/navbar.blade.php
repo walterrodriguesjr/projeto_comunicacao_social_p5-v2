@@ -3,19 +3,22 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">PMPR</a>
+      <div class="titulo_navbar">
+        <h2>Polícia Militar do Paraná - Sistema de Comunicação Social</h2>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="/">Eventos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Eventos</a>
+            <a class="nav-link" href="/scss/create">Criar Eventos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cadastrar eventos</a>
+            <a class="nav-link" href="#">Meus Eventos</a>
           </li>
         </ul>
         {{-- <form class="d-flex">
