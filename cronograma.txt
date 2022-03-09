@@ -1,5 +1,5 @@
 1 - instalação do laravel via composer, atualização do composer 
-    ->composer create-project --prefer-dist laravel/laravel:^7.0 p5-v2
+    ->composer create-project --prefer-dist laravel/laravel:^7.0 nome do projeto
     ->composer update
 
 2-criação da rota (routes) no arquivo web.php 
@@ -12,5 +12,17 @@
 4-criada a view 'principal', que será a index do projeto
     ->principal.blade.php 
 
-5-instalação das dependencias do boostrap direto no laravel PENDENTE
-https://www.youtube.com/watch?v=LQQk1ZSyqLM
+5-instalação das dependencias do npm, jquery e boostrap direto  no laravel 
+->instalado npm - npm install
+->npm run dev
+->instalado jquery - npm install jquery (para inserir no projeto = )<script>src="{{asset('site/jquery.js')}}"</script> , posterior pode ser exportado junto como template
+->instalado bootstrap 5 - npm install bootstrap - <script>src="{{asset('site/jquery.js')}}"</script>
+->instalado css bootstrap 5 - inserido no webpack.mic.js o .sass('node_modules/bootstrap/scss/bootstrap.scss', 'public/site/bootstrap.css')
+->sempre inserir os referidos endereços no webpack.mic.js (sass do bootstrap ja inserido anteriormente)
+->criar na pasta views, uma pasta 'scss', em seguida nela, criar um arquivo 'style.scss';
+    ->nesta pasta é inserida o @import "~bootstrap/scss/bootstrap"; e no webpack.mix.js , no .sass fica: .sass('resources/views/scss/style.scss', 'public/site/style.css')
+    ->em seguida, no views, na parte de link de css, fica: <link rel="stylesheet" href="{{asset('site/style.css')}}">
+->sempre rodar o npm run dev - após inserir uma nova dependencia
+->necessario inserir o link css no inicio e os scripts ao final da view, porem posteriormente, pode ser exportado junto
+->neste caso, também fica a possibilidade de customizar as classes de bootstrap
+tutorial:-> https://www.youtube.com/watch?v=LQQk1ZSyqLM
