@@ -1,17 +1,22 @@
+INSTALAÇÃO
 1 - instalação do laravel via composer, atualização do composer 
     ->composer create-project --prefer-dist laravel/laravel:^7.0 nome do projeto
     ->composer update
 
+ROUTES
 2-criação da rota (routes) no arquivo web.php 
     ->Route::get('/', 'PrincipalController@principal')->name('sistema.index');
 
+CONTROLLERS
 3-criação do controller - PrincipalController em (app\)Http\Controllers)
         ->php artisan make:controller PrincipalController
     ->inserida a função 'principal', que como return, renderiza a view 'sistema.principal', já utilizando o seu apelido delarado em web.php
 
+VIEWS
 4-criada a view 'principal', que será a index do projeto
     ->principal.blade.php 
 
+DEPENDÊNCIAS E BIBLIOTECAS
 5-instalação das dependencias do npm, jquery e boostrap direto  no laravel 
 ->instalado npm - npm install
 ->npm run dev
@@ -26,3 +31,9 @@
 ->necessario inserir o link css no inicio e os scripts ao final da view, porem posteriormente, pode ser exportado junto
 ->neste caso, também fica a possibilidade de customizar as classes de bootstrap
 tutorial:-> https://www.youtube.com/watch?v=LQQk1ZSyqLM
+
+LAYOUTS, COMPONENTS E TEMPLATE
+6-inserido a pasta layouts, dentro de views, para controlar as pastas: 
+    ->components: possui partes comuns do sistema como footer, navbar etc.. entram por include no template1
+    ->template: já importa as partes comuns do components, bastando apenas ser inseridos as partes principais das view por @yield 
+
