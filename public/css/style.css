@@ -1,12 +1,25 @@
+
+/* General */
+* {
+    font-family: 'Roboto';
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 /* TITULO H1 CENTRO DO NAVBAR PADRÃO */
-.titulo_navbar{
-    margin-left: 400px;
+.titulo_navbar {
+    margin-left: 50px;
 }
 
 /* LINKS DE URL EVENTOS - CRIAR EVENTOS - MEUS EVENTOS */
- .collapse {
-    margin-left: 250px;
-} 
+.collapse {
+    margin-left: 50px;
+}
+
 /* search */
 
 .search {
@@ -45,7 +58,7 @@ footer {
     background-color: #353E48;
     color: #FFF;
     padding: 10px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }

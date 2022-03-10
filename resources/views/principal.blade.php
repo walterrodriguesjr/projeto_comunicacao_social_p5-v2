@@ -1,6 +1,6 @@
+
 {{-- VIEW PRINCIPAL, TRAZENDO EXTENDS, E ENVIANDO PELAS SECTIONS, 
     CONTEUDOS PERSONALIZADOS E INDIVIDUAIS DA PAGINA, RECEBIDO NO TEMPLATE1 PELOS YIELDS --}}
-
 @extends('layouts.template.template1')
 
 @section('titulo', 'Home')
@@ -15,10 +15,18 @@
             </div>
         </div>
     </div>
-    @endsection
+@endsection
 
-    {{-- CABEÇALHO DA AREA DE CARDS --}}
-    @section('conteudoCards')
+{{-- CABEÇALHO DA AREA DE JUMBOTRON --}}
+@section('conteudoJumbotron')
+    <div class="p-5 bg-light">
+        <h1 class="display-3">área para o banner</h1>
+        <hr class="my-2">
+    </div>
+@endsection
+
+{{-- CABEÇALHO DA AREA DE CARDS --}}
+@section('conteudoCards')
     <div class="p-5 bg-light">
         <h1 class="display-5">Eventos Cadastrados</h1>
         <hr class="my-2">
@@ -56,6 +64,4 @@
             </div>
         </div>
     </div>
-    @endsection
-
-
+@endsection

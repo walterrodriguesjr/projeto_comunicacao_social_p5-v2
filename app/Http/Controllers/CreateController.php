@@ -9,7 +9,8 @@ class CreateController extends Controller
 {
     public function create()
     {
-        var_dump('$_POST');
-        return view('scss.create');
+        /* VAR_DUMP RETORNA NA TELA O QUE FOI SUBMETIDO PELO FORM E O RETURN RENDERIZA A VIEW CREATE */
+        var_dump($_POST);
+        return view('create');
     }
 }
