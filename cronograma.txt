@@ -37,3 +37,28 @@ LAYOUTS, COMPONENTS E TEMPLATE
     ->components: possui partes comuns do sistema como footer, navbar etc.. entram por include no template1
     ->template: já importa as partes comuns do components, bastando apenas ser inseridos as partes principais das view por @yield 
 
+MODELS 
+7-models são responsáveis por persistirem dados no banco 
+    ->criando uma MODEL para 'create' e em seguida,com o '-m' já estabelecendo sua migration
+        ->php artisan make:model CreateModel -m
+
+MIGRATION
+8->as migration servem para criar as tabelas em banco diretamente, atraves de codigo PHP
+        ->o nome repassado na criação da model, reflete no nome da criação da class do mesmo
+        ->Migrations São classes que executam funções, as quais executam comando 
+            para banCo de dados (Schema), criando, editando, deletando etc...
+        ->para rodar uma migrate - php artisan migrate
+
+.ENV 
+9-por padrão, o laravel cria o arquivo .env.example, porem, deve se
+    fazer uma copia deste, nomear como .env, e neste arquivo, configurar com o banco escolhido 
+
+PHP.INI 
+10-MUITAS EXTENSÕES POR PADRÃO VEM BLOQUEADAS, SENDO DE MYSQL, PSTGL, PDO ETC.. 
+    SENDO NECESSARIO ACESAR O php.ini e descomentar (;) AS EXTENSÕES DESEJADAS 
+
+
+
+
+
+
